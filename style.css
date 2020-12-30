@@ -1,0 +1,8 @@
+body {
+    background-image: url("waldo.jpg");
+}
+img { /*starting position*/
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}

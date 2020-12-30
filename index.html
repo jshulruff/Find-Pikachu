@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Pikachu</title>
+    <link rel= "stylesheet" href="style.css">
+
+    <script>
+        function loadPikachu(){
+            document.getElementById("pikachu").src = "pikachu.png"
+        }
+        
+        function movePikachu() {
+        alert('You Found Pikachu!')
+        var picture = document.getElementById('pikachu')
+
+        var x = Math.random() * 1100
+        var y = Math.random() * 1000
+
+         picture.style.top = x + 'px'
+         picture.style.left = y + 'px'
+}
+    </script>
+</head>
+
+<body onload="loadPikachu()">
+    <img id="pikachu" onclick="movePikachu()">
+</body>
+</html>
